@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/banner_discover"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/text_discover_head_line"
+            style="@style/text_discover_style"
+            android:layout_marginRight="5dp"
+            android:drawableTop="@mipmap/discover_menu_0"
+            android:textColor="#548AF5"
+            android:text="科普头条"/>
+
+        <TextView
+            android:id="@+id/text_discover_lecture"
+            style="@style/text_discover_style"
+            android:layout_marginLeft="5dp"
+            android:drawableTop="@mipmap/discover_menu_1"
+            android:textColor="#EB6A28"
+            android:text="科普讲堂"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/text_discover_life"
+            style="@style/text_discover_style"
+            android:layout_marginRight="5dp"
+            android:drawableTop="@mipmap/discover_menu_2"
+            android:textColor="#5BC1D7"
+            android:text="科普生活"/>
+
+        <TextView
+            android:id="@+id/text_discover_video"
+            style="@style/text_discover_style"
+            android:layout_marginLeft="5dp"
+            android:drawableTop="@mipmap/discover_menu_3"
+            android:textColor="#9965F5"
+            android:text="科普视频"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_discover_park"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        style="@style/text_discover_style"
+        android:drawableTop="@mipmap/discover_menu_4"
+        android:text="科普公园"
+        android:textColor="#7AC500"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

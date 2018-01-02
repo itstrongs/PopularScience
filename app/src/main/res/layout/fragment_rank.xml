@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/banner_rank"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/fragment_small_space"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_frame_blue">
+
+            <TextView
+                style="@style/text_title_style_blue"
+                android:layout_marginLeft="@dimen/fragment_big_space"
+                android:text="当前月度排名"/>
+
+            <TextView
+                android:id="@+id/text_rank_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/color_red"
+                android:textStyle="bold|italic"
+                android:textSize="@dimen/rank_text_num_size"
+                android:layout_marginLeft="@dimen/fragment_big_space"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_frame_blue"
+            android:layout_marginTop="@dimen/fragment_small_space">
+
+            <TextView
+                style="@style/text_title_style_blue"
+                android:layout_marginLeft="@dimen/fragment_big_space"
+                android:text="当前年度排名"/>
+
+            <TextView
+                android:id="@+id/text_rank_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold|italic"
+                android:textColor="@color/color_red"
+                android:textSize="@dimen/rank_text_num_size"
+                android:layout_marginLeft="@dimen/fragment_big_space"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/fragment_small_space">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/rank_text_top_month"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/fragment_small_space"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/rank_text_top_year"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

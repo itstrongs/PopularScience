@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/user_bg"
+              android:gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/img_setting_head"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/user_default_icon"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/register_line_space">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="@dimen/register_item_width"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/register_menu_0"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:text=" 用户名"/>
+
+            <TextView
+                android:id="@+id/text_setting_user_name"
+                style="@style/text_title_style_blue"
+                android:textColor="@color/color_dark_blue"
+                android:text="1851848"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/fragment_small_space"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="@dimen/register_item_width"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/register_menu_1"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:text=" 原密码"/>
+
+            <EditText
+                android:id="@+id/text_setting_user_pass_old"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/color_gray"
+                android:background="@drawable/shape_frame_gray"
+                android:layout_marginLeft="@dimen/fragment_small_space"
+                android:password="true"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:hint="请输入原密码"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="@dimen/register_item_width"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/register_menu_1"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:text=" 新密码"/>
+
+            <EditText
+                android:id="@+id/text_setting_user_pass_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/color_gray"
+                android:background="@drawable/shape_frame_gray"
+                android:layout_marginLeft="@dimen/fragment_small_space"
+                android:textColorHighlight="@color/bg_color"
+                android:password="true"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:hint="请输入新密码"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="@dimen/register_item_width"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/register_menu_2"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:text=" 昵    称"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/color_gray"
+                android:background="@drawable/shape_frame_gray"
+                android:layout_marginLeft="@dimen/fragment_small_space"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:hint="请输入昵称"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="@dimen/register_item_width"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/register_menu_3"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:text=" 邮    箱"/>
+
+            <EditText
+                android:id="@+id/text_setting_user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/color_gray"
+                android:background="@drawable/shape_frame_gray"
+                android:layout_marginLeft="@dimen/fragment_small_space"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:hint="123456@qq.com"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_setting_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_touch"
+        android:textSize="@dimen/text_title_size"
+        android:textColor="@color/color_white"
+        android:text="提 交"/>
+</LinearLayout>

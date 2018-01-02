@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/banner_sign_in">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/fragment_big_space">
+
+            <TextView
+                style="@style/text_common_style_white"
+                android:layout_marginRight="@dimen/fragment_small_space"
+                android:layout_gravity="center_vertical"
+                android:text="我的积分"/>
+
+            <TextView
+                android:id="@+id/text_sign_in_score"
+                style="@style/text_title_style_white"
+                android:textColor="#FEF600"
+                android:text="0"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/fragment_small_space">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/fragment_small_space">
+
+            <TextView
+                android:id="@+id/text_sign_in_date"
+                style="@style/text_common_style_blue"
+                android:text="2016年06月04日"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/fragment_small_space"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    style="@style/text_common_style_blue"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:text="签到提醒 "/>
+
+                <ImageView
+                    android:id="@+id/img_sign_in_on_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/sign_in_off"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color"
+            android:padding="5dp">
+
+            <TextView
+                style="@style/sign_in_text_view"
+                android:text="日"/>
+
+            <TextView
+                style="@style/sign_in_text_view"
+                android:text="一"/>
+
+            <TextView
+                style="@style/sign_in_text_view"
+                android:text="二"/>
+
+            <TextView
+                style="@style/sign_in_text_view"
+                android:text="三"/>
+
+            <TextView
+                style="@style/sign_in_text_view"
+                android:text="四"/>
+
+            <TextView
+                style="@style/sign_in_text_view"
+                android:text="五"/>
+
+            <TextView
+                style="@style/sign_in_text_view"
+                android:text="六"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#ffff0000"
+            android:dividerHeight="10dp">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <TextView
+        style="@style/text_common_style_blue"
+        android:textColor="@color/color_dark_blue"
+        android:layout_marginLeft="@dimen/fragment_small_space"
+        android:layout_marginBottom="@dimen/fragment_small_space"
+        android:text="赚更多积分"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_gray"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sign_invite"
+            android:layout_marginLeft="@dimen/fragment_big_space"/>
+
+        <TextView
+            style="@style/text_common_style_blue"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/fragment_small_space"
+            android:text="邀请有礼"/>
+    </LinearLayout>
+</LinearLayout>

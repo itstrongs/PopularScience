@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical"
+              android:background="@color/bg_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/btn_home_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/menu_back"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_white"
+            android:text="@string/base_fragment_menu"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/text_home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/img_home_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/home_setting"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_tab_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/color_white">
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:baselineAligned="true"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/text_discover"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_tab_menu_0"
+            android:gravity="center_horizontal"
+            android:text="@string/home_tab0"
+            android:textColor="@color/color_white" />
+
+        <TextView
+            android:id="@+id/text_read"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_tab_menu_1"
+            android:gravity="center_horizontal"
+            android:text="@string/home_tab1"
+            android:textColor="@color/color_white" />
+
+        <TextView
+            android:id="@+id/text_contest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_tab_menu_2"
+            android:gravity="center_horizontal"
+            android:text="@string/home_tab2"
+            android:textColor="@color/color_white" />
+
+        <TextView
+            android:id="@+id/text_my"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_tab_menu_3"
+            android:gravity="center_horizontal"
+            android:text="@string/home_tab3"
+            android:textColor="@color/color_white" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">科普房山</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="home_tab0">发现</string>
+    <string name="home_tab1">阅读</string>
+    <string name="home_tab2">竞赛</string>
+    <string name="home_tab3">我的</string>
+
+    <string name="base_fragment_menu">返回</string>
+    
+    <string name="video_btn_download">下载</string>
+    <string name="video_btn_play">播放</string>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_web_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/color_block"
+        android:layout_margin="@dimen/fragment_small_space"
+        android:text="图文标题"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                style="@style/text_common_style_gray"
+                android:background="@drawable/shape_gray_hollow"
+                android:text="原创"/>
+
+            <TextView
+                android:id="@+id/text_details_date"
+                style="@style/text_common_style_gray"
+                android:layout_marginLeft="10dp"
+                android:text="2016-05-31"/>
+
+            <TextView
+                style="@style/text_common_style_gray"
+                android:layout_marginLeft="10dp"
+                android:text="科普房山"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/text_details_collect"
+                style="@style/text_common_style_gray"
+                android:drawableLeft="@mipmap/details_collect"
+                android:text="收藏"/>
+
+            <TextView
+                android:id="@+id/text_details_share"
+                style="@style/text_common_style_gray"
+                android:drawableLeft="@mipmap/details_share"
+                android:layout_marginLeft="10dp"
+                android:text="分享"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </WebView>
+</LinearLayout>

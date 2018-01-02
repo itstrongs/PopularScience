@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="@dimen/fragment_small_space"
+              android:paddingBottom="@dimen/fragment_small_space">
+
+    <ImageView
+        android:id="@+id/img_head_line_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/img_error"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/fragment_small_space"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_head_line_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_block"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:text="颠覆传统科普教育"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_head_line_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="0.85"-->
+            <!--android:ellipsize="end"-->
+            <!--android:maxLines="5"/>-->
+
+        <Button
+            android:id="@+id/btn_head_line_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:background="@drawable/selector_btn_touch"
+            android:textColor="@color/color_white"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:text="详细内容"/>
+    </LinearLayout>
+</LinearLayout>

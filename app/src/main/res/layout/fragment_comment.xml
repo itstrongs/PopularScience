@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/suggest_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/user_default_icon"
+            android:layout_marginTop="@dimen/fragment_big_space"
+            android:layout_marginBottom="@dimen/fragment_big_space"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/edit_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入您的内容......"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:gravity="left|top"
+        android:textColorHint="@color/color_gray"
+        android:layout_margin="@dimen/fragment_small_space"
+        android:background="@drawable/shape_frame_gray"/>
+
+    <Button
+        android:id="@+id/btn_comment_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提 交"
+        android:textSize="20sp"
+        android:layout_marginTop="@dimen/fragment_small_space"
+        android:textColor="@color/color_white"
+        android:background="@drawable/selector_btn_touch"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

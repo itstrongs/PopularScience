@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/fragment_big_space">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/banner_contest"
+        android:layout_marginBottom="@dimen/fragment_big_space"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_contest_game"
+        style="@style/contest_list_style">
+
+        <ImageView
+            style="@style/contest_list_left_style"
+            android:src="@mipmap/contest_menu_icon_0"/>
+
+        <ImageView
+            style="@style/contest_list_right_style"
+            android:src="@mipmap/contest_menu_text_0"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_know_competition"
+        style="@style/contest_list_style">
+
+        <ImageView
+            style="@style/contest_list_left_style"
+            android:src="@mipmap/contest_menu_icon_1"/>
+
+        <ImageView
+            style="@style/contest_list_right_style"
+            android:src="@mipmap/contest_menu_text_1"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_day_answer"
+        style="@style/contest_list_style">
+
+        <ImageView
+            style="@style/contest_list_left_style"
+            android:src="@mipmap/contest_menu_icon_2"/>
+
+        <ImageView
+            style="@style/contest_list_right_style"
+            android:src="@mipmap/contest_menu_text_2"/>
+    </RelativeLayout>
+
+</LinearLayout>

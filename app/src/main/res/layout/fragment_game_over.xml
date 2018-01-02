@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/game_over_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="恭喜你答题结束！"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#CE2540"
+        android:textSize="30sp"
+        android:paddingTop="200dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/fragment_small_space">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/fragment_small_space"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/rank_text_top_month"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_month"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/color_white">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/fragment_small_space"
+            android:layout_marginRight="@dimen/fragment_small_space"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/rank_text_top_year"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_year"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/color_white">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/fragment_big_space">
+
+        <Button
+            android:id="@+id/btn_game_over_back"
+            style="@style/style_btn_bg_blue_text_white"
+            android:text="返        回"/>
+
+        <Button
+            android:id="@+id/btn_game_over_continue"
+            style="@style/style_btn_bg_blue_text_white"
+            android:layout_marginLeft="50dp"
+            android:text="继续答题"/>
+    </LinearLayout>
+</LinearLayout>
